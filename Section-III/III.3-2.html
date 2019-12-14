@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>定时器示例</title>
+</head>
+<body>
+<input type="text" id="result">
+
+<input type="button" value="开始">
+<input type="button" value="结束">
+
+<script>
+  window.onload = function () {
+    var resultBox = document.getElementById("result");
+    var running = false;  // 这里先用全局变量来实现了，实际应用中应该会将整个计时器封装起来
+    var timeStart = 0.;  // 同上
+
+    function timerControl(event) {
+      if (event.target.tagName === "INPUT") {
+        var instruction = event.target.value;
+        switch (instruction) {
+          case "开始": {
+            if (!running) {
+              running = true;
+              timeStart = new Date().getTime();
+              console.log(timeStart);
+            }
+            break
+          }
+          case "结束": {
+            if (running) {
+              running = false;
+              resultBox.value = ((new Date().getTime() - timeStart) / 1000).toString() + "s"
+            }
+            break
+          }
+          default: {
+            break
+          }
+        }
+      }
+    }
+    document.addEventListener('click', timerControl, false);
+  }
+</script>
+</body>
+</html>

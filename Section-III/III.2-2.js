@@ -141,20 +141,9 @@ function init() {
     }
   }
 
-  function CartItem(productData) {
+  function CartRow(productData) {
     this.data = productData;
-    this.toItemRow = () => {
-      var itemRow = document.createElement("tr");
-      itemRow.setAttribute("class", "item-row");
-      var checkBoxCell = this.toCheckboxCell(this.data.checked);  // 选择
-      var nameCell = this.toTextCell(this.data.name, "item-name");  // 商品名称
-      var priceCell = this.toTextCell(this.data.price, "item-price");  // 商品单价(￥)
-      var quantityCell = this.toQuantityCell(this.data.count);  // 商品数量
-      var totalCell = this.toTextCell("", "item-total");  // 总价(￥)
-      appendChildren.call(itemRow, [checkBoxCell, nameCell, priceCell, quantityCell, totalCell]);
-      updateRowTotal.call(itemRow);
-      return itemRow;
-    };
+
     this.toCheckboxCell = (isChecked) => {
       var cell = document.createElement("td");
       var checkBox = document.createElement("input");
@@ -182,12 +171,22 @@ function init() {
       appendChildren.call(cell, [minusButton, quantityText, plusButton]);
       return cell;
     };
+    var itemRow = document.createElement("tr");
+    itemRow.setAttribute("class", "item-row");
+    var checkBoxCell = this.toCheckboxCell(this.data.checked);  // 选择
+    var nameCell = this.toTextCell(this.data.name, "item-name");  // 商品名称
+    var priceCell = this.toTextCell(this.data.price, "item-price");  // 商品单价(￥)
+    var quantityCell = this.toQuantityCell(this.data.count);  // 商品数量
+    var totalCell = this.toTextCell("", "item-total");  // 总价(￥)
+    appendChildren.call(itemRow, [checkBoxCell, nameCell, priceCell, quantityCell, totalCell]);
+    updateRowTotal.call(itemRow);
+    return itemRow;
   }
 
 
   for (var productData of carProducts) {
-    var cartItem = new CartItem(productData);
-    cartContents.appendChild(cartItem.toItemRow());
+    var cartRow = new CartRow(productData);
+    cartContents.appendChild(cartRow);
   }
   getSummary.call(cartContents);
   cartContents.addEventListener('click', updateCart, false);
