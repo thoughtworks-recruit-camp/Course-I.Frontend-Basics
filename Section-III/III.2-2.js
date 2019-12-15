@@ -21,7 +21,7 @@ function init() {
     yMax: staticBlock.offsetTop + staticBlock.offsetHeight
   };
 
-  function overlapUpdate() {
+  function checkOverlap() {
     if (staticBlock.style.background !== "blue") {
       var coordinatesActive = {
         xMin: activeBlock.offsetLeft,
@@ -35,7 +35,7 @@ function init() {
     }
   }
 
-  function movementUpdate(event) {
+  function updateTracking(event) {
     var relativeX = event.clientX + window.scrollX - containerLeft;  // 考虑屏幕滚动影响
     var relativeY = event.clientY + window.scrollY - containerTop;
 
@@ -50,10 +50,19 @@ function init() {
         0 : (cHalfHeight - bHalfHeight) * 2);  // Top Border : Bottom Border
     activeBlock.style.left = leftPos.toString() + "px";
     activeBlock.style.top = topPos.toString() + "px";
-    overlapUpdate();
+    checkOverlap();
   }
 
-  document.onmousemove = movementUpdate;  // 绑定到container的话鼠标移出去就不动了，有时会卡在接近边缘的位置
+  function activateTracking() {
+    document.onmousemove = updateTracking;  // 绑定到container的话鼠标移出去activeBlock就不动了，有时会卡在接近边缘的位置
+  }
+
+  function deactivateTracking() {
+    document.onmousemove = null;
+  }
+
+  activeBlock.onmousedown = activateTracking;
+  document.onmouseup = deactivateTracking;  // 绑定到activeBlock的话鼠标移出去container不会解除跟踪
 }
 
 
