@@ -1,0 +1,38 @@
+#container {
+  width: 1000px;
+  height: 800px;
+  background: gray;
+  position: relative;
+  margin: auto;
+}
+[id$="block"] {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+#static-block {
+  background: yellow;
+  left: 500px;
+  top: 500px;
+}
+#active-block {
+  background: green;
+}
+
+[id$="checker"] {
+  position: absolute;
+  background: transparent;
+}
+#vicinity-checker {
+  left: 460px;
+  top: 460px;
+  width: 160px;
+  height: 160px;
+  z-index: 100;
+}
+#border-checker {
+  left: 40px;
+  top: 40px;
+  width: 920px;
+  height: 720px;
+}
