@@ -5,8 +5,8 @@ function isQualified(username, password) {
 function checkInput() {
   var usernameInput = document.getElementById('username-input');
   var passwordInput = document.getElementById('password-input');
-  username = usernameInput.value;
-  password = passwordInput.value;
+  var username = usernameInput.value;
+  var password = passwordInput.value;
   if (isQualified(username, password)) {
     alert("登陆成功。");
   } else if (!username || !password) {
