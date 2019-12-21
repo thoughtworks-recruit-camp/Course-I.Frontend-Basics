@@ -11,28 +11,39 @@ function appendChildren(children) {  // shortcut for appendChild
   }
 }
 
-window.onload = function () {
 
+window.onload = function () {
 
   var textBox = document.getElementById("text-box");
   var addButton = document.getElementById("add-button");
   var todoList = document.getElementsByTagName("ol")[0];
   var listItems = document.getElementsByTagName("li");
-  var checkBoxes = document.getElementsByClassName("check-box");
   var filterDiv = document.getElementById("filters");
 
   var currentFilter = "ALL";
 
-  function addLi(entry) {
-    var li = document.createElement("li");
-    li.setAttribute("item-index", entry.index);
-    var checkBox = document.createElement("input");
-    setAttributes.call(checkBox, ["type", "class"], ["checkbox", "check-box"]);
-    checkBox.checked = entry.done;
-    var content = document.createElement("span");
-    content.innerHTML = entry.content;
-    appendChildren.call(li, [checkBox, content]);
-    todoList.appendChild(li);
+
+  function initEntries() {
+    if (localStorage.length === 0) {  // create some initial entries
+      var contents = [
+        "Learn Basic HTML5 and CSS3",
+        "Learn Basic JavaScript",
+        "Write simple Web Apps"
+      ];
+      for (let index = 0; index < 3; index++) {
+        entry = {
+          "index": index,
+          "content": contents[index],
+          "done": false
+        };
+        localStorage.setItem(index.toString(), JSON.stringify(entry));
+      }
+    }
+
+    for (var index = 0, len = localStorage.length; index < len; index++) {
+      var entry = JSON.parse(localStorage.getItem(index.toString()));
+      addLi(entry);
+    }
   }
 
   function addEntry() {
@@ -44,6 +55,18 @@ window.onload = function () {
       localStorage.setItem(index, JSON.stringify(entry));
     }
     updateFilter();
+  }
+
+  function addLi(entry) {
+    var li = document.createElement("li");
+    li.setAttribute("item-index", entry.index);
+    var checkBox = document.createElement("input");
+    setAttributes.call(checkBox, ["type", "class"], ["checkbox", "check-box"]);
+    checkBox.checked = entry.done;
+    var content = document.createElement("span");
+    content.innerHTML = entry.content;
+    appendChildren.call(li, [checkBox, content]);
+    todoList.appendChild(li);
   }
 
   function toggleFilter(event) {
@@ -81,7 +104,6 @@ window.onload = function () {
     }
   }
 
-
   function toggleStatus(event) {
     var target = event.target;
     if (target.tagName === "INPUT") {
@@ -93,17 +115,9 @@ window.onload = function () {
     }
   }
 
-  function initEntries() {
-    for (var i = 0, len = localStorage.length; i < len; i++) {
-      var entry = JSON.parse(localStorage.getItem(i.toString()));
-      addLi(entry);
-    }
-  }
 
   initEntries();
-
   addButton.onclick = addEntry;
   todoList.addEventListener('click', toggleStatus, false);
   filterDiv.addEventListener('click', toggleFilter, false);
-
 };

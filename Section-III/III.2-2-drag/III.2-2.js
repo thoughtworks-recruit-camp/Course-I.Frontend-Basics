@@ -1,7 +1,7 @@
 function isOverlap(A, B) {
-  return (((B.xMin < A.xMin && A.xMin < B.xMax) || (B.xMin < A.xMax && A.xMax < B.xMax))
+  return (((B.xMin < A.xMin && A.xMin < B.xMax) || (B.xMin < A.xMax && A.xMax < B.xMax))  // X overlap
     &&
-    ((B.yMin < A.yMin && A.yMin < B.yMax) || (B.yMin < A.yMax && A.yMax < B.yMax)))
+    ((B.yMin < A.yMin && A.yMin < B.yMax) || (B.yMin < A.yMax && A.yMax < B.yMax))) // Y overlap
 }
 
 function init() {
