@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Shopping Cart</title>
-  <link href="III.3.css" rel="stylesheet"/>
-  <script src="III.3.js" rel="script"></script>
+  <link href="./III.3.css" rel="stylesheet"/>
 </head>
 <body>
 <form id="cart-list">
@@ -20,15 +19,17 @@
     </tr>
     </thead>
     <tbody id="cart-contents"></tbody>
-    <tfoot id="cart-summary"></tfoot>
+    <tfoot id="cart-summary">
     <tr>
       <th>
         <label for="select-all-button">全选</label>
-        <input type="checkbox" id="select-all-button"/>
+        <input type="checkbox" id="select-all-button" checked/>
       </th>
       <th id="summary-text" colspan="4"></th>
     </tr>
+    </tfoot>
   </table>
 </form>
 </body>
+<script src="./III.3.js" rel="script"></script>
 </html>

@@ -1,42 +1,46 @@
 #cart-list table {
-  margin:0 auto;
+  margin: 0 auto;
   border-collapse: collapse;
-  font-family: "宋体",serif;
+  font-family: "宋体", serif;
   text-align: center;
 }
-#cart-list caption{
+
+#cart-list caption {
   font-size: 32px;
   font-weight: bold;
   margin: 16px;
 }
+
 #cart-list td,
-#cart-list th
-{
+#cart-list th {
   padding: 0 16px;
   border: 1px #888888 solid;
   border-collapse: collapse;
 
 }
+
 #cart-list tr {
   height: 48px;
 }
-#cart-list td {
 
-}
-#cart-header{
+#cart-header {
   height: 48px;
   background-color: #eeeeee;
 }
+
 #cart-contents input {
   vertical-align: baseline;
 }
+
 #cart-contents span {
   margin: 0 8px;
 }
-#cart-contents [class$="button"]{
-  height:32px;
+
+#cart-contents [class$="button"] {
+  height: 32px;
   width: 32px;
 }
+
 #summary-text {
   text-align: end;
 }
