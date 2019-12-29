@@ -6,4 +6,5 @@
 * [III.2-2 Drag & Overlap](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.2-2-drag/III.2-2.html) 
   * [*-> hack version (buggy)*](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.2-2-drag/III.2-2-hack.html)
 * [III.3 Shopping Cart](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.3-cart/III.3.html)
+* [III.4 AJAX Bundle](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.4-ajax/III.4.html)
 * [III.5 Todo List](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.5-todo/III.5.html)
