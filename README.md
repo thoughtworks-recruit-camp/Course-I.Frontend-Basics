@@ -15,4 +15,4 @@
 * [III.4 AJAX Bundle](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.4-ajax/III.4.html)
 * [III.5 Todo List](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.5-todo/III.5.html)
 ### Shares
-* [Multi-line Ellipses]()
+* [Multi-line Ellipses](https://github.com/thoughtworks-recruit-camp/Course-I.Frontend-Basics/tree/master/Share/multi-line-ellipsis-share)
