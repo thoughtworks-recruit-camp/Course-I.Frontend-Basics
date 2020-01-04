@@ -1,0 +1,28 @@
+body {
+  font-size: 32px;
+}
+
+[class$="frame"] {
+  font-family: sans-serif;
+  line-height: 1.5em;
+  font-size: 1em;
+  font-weight: lighter;
+  color: salmon;
+  border: 2px cornflowerblue dashed;
+  margin: 10em auto;
+  position: relative;
+}
+
+.single-line-frame {
+  height: 1.5em;
+  width: 20em
+}
+
+.portrait-frame {
+  height: 12em;
+  width: 9em;
+}
+.landscape-frame {
+  height: 3em;
+  width: 32em;
+}

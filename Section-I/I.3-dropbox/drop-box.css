@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "SFUIText-Light";
+  src: url(./SFUIText-Light.otf) format("opentype");
+}
+
+.box {
+  background: #f65040;
+  width: 260px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "SFUIText-Light", sans-serif;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.location {
+  display: inline-block;
+  width: 180px;
+  padding: 10px 0 10px 10px;
+  margin: 0 0 0 10px;
+}
+
+.marker {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  border-top: 12px solid #ffffff;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.gap {
+  width: 260px;
+  height: 24px;
+  margin: 10px auto;
+  padding: 0;
+}
+
+.blank {
+  display: inline-block;
+  width: 180px;
+  padding: 0 0 0 10px;
+  margin: 0 0 0 10px;
+}
+
+.tip {
+  display: inline-block;
+  margin: 0 0 0 6px;
+  border-right: 12px solid transparent;
+  border-bottom: 18px solid #f65040;
+  border-left: 12px solid transparent;
+}
+
+#drop-box-lower {
+  margin-top: -32px;
+}
+
+#drop-box-lower ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+#drop-box-lower li {
+  padding: 10px;
+}
+
+#drop-box-lower li:not(:last-child) {
+  border-bottom: #ffffff44 1px solid;
+}
+
+#drop-box-lower a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#drop-box-lower p {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  vertical-align: middle;
+}
+
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://s3.cn-north-1.amazonaws.com.cn/tws-upload/images/1574777281753-5686940d-f106-4b30-a6d8-30b05a48bce4.png), linear-gradient(#f65040, #f65040);
+  background-blend-mode: lighten;
+  background-size: 169px 127px;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+#icon-like {
+  background-position: -45px -70px;
+}
+
+#icon-fav {
+  background-position: -101px -25px;
+}
+
+#icon-discuss {
+  background-position: -45px -25px;
+}

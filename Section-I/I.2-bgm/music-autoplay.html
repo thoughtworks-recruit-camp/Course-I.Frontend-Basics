@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UML Theory Quiz</title>
+</head>
+<body>
+<h1>统一建模语言理论测试</h1>
+<form id="quiz-form">
+  <table>
+    <tr>
+      <td>
+        <p>考试科目：</p>
+      </td>
+      <td>
+        <p>统一建模语言</p>
+      </td>
+      <td>
+        <p>时间：</p>
+      </td>
+      <td>
+        <p>100分钟</p>
+      </td>
+      <td>
+        <p>得分：</p>
+      </td>
+      <td>
+        <p>100</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="student-class"> 班级： </label>
+      </td>
+      <td>
+        <input id="student-class" name="Student Class" value="1班">
+      </td>
+      <td>
+        <label for="student-id"> 学号 </label>
+      </td>
+      <td>
+        <input id="student-id" name="Student ID" value="001">
+      </td>
+      <td>
+        <label for="student-name"> 姓名 </label>
+      </td>
+      <td>
+        <input id="student-name" name="Student Name" value="王小闹">
+      </td>
+    </tr>
+  </table>
+  <section>
+    <h2>一、填空题（每空5分，共20分）</h2>
+    <ol>
+      <li>
+        <label for="q-1.1"> UML的中文全称是： </label>
+        <input id="q-1.1" name="Question I.1" value="统一建模语言">
+
+      </li>
+      <li>
+        <form id="q-1.2-f">
+          <label for="q-1.2-f">对象最突出的特征是：</label>
+          <input id="q-1.2.1" name="Question I.2" value="封装性"/>
+          <input id="q-1.2.2" name="Question I.2" value="继承性"/>
+          <input id="q-1.2.3" name="Question I.2" value="多态性"/>
+        </form>
+      </li>
+    </ol>
+  </section>
+  <section>
+    <h2>二、选择题（每题10分，共20分）</h2>
+    <ol>
+      <li>
+        <form id="q-2.1-f">
+          <label for="q-2.1-f">UML与软件工程的关系是：<br></label>
+          <input type="radio" id="q-2.1.1" name="Question II.1" value="A">
+          <label for="q-2.1.1">(A) UML就是软件工程<br></label>
+          <input type="radio" id="q-2.1.2" name="Question II.1" value="B" checked>
+          <label for="q-2.1.2">(B) UML参与到软件工程中软件开发过程的几个阶段<br></label>
+          <input type="radio" id="q-2.1.3" name="Question II.1" value="C">
+          <label for="q-2.1.3">(C) UML与软件工程无关<br></label>
+          <input type="radio" id="q-2.1.4" name="Question II.1" value="D">
+          <label for="q-2.1.4">(D) UML是软件工程的一部分<br></label>
+        </form>
+      </li>
+      <li>
+        <form id="q-2.2-f">
+          <label for="q-2.2-f">Java语言支持：<br></label>
+          <input type="radio" id="q-2.2.1" name="Question II.2" value="A" checked>
+          <label for="q-2.2.1">(A) 单继承<br></label>
+          <input type="radio" id="q-2.2.2" name="Question II.2" value="B">
+          <label for="q-2.2.2">(B) 多继承<br></label>
+          <input type="radio" id="q-2.2.3" name="Question II.2" value="C">
+          <label for="q-2.2.3">(C) 单继承和多继承都支持<br></label>
+          <input type="radio" id="q-2.2.4" name="Question II.2" value="D">
+          <label for="q-2.2.4">(D) 单继承和多继承都不支持<br></label>
+        </form>
+      </li>
+    </ol>
+  </section>
+  <section>
+    <h2>三、多择题（每题10分，共20分）</h2>
+    <ol>
+      <li>
+        <label>用例的粒度分为以下哪三种：<br></label>
+        <input type="checkbox" id="q-3.1.1" name="Question III.1" value="A" checked>
+        <label for="q-3.1.1">(A) 概述级<br></label>
+        <input type="checkbox" id="q-3.1.2" name="Question III.1" value="B" checked>
+        <label for="q-3.1.2">(B) 需求级<br></label>
+        <input type="checkbox" id="q-3.1.3" name="Question III.1" value="C">
+        <label for="q-3.1.3">(C) 用户目标级<br></label>
+        <input type="checkbox" id="q-3.1.4" name="Question III.1" value="D" checked>
+        <label for="q-3.1.4">(D) 子功能级<br></label>
+      </li>
+      <li>
+        <label>类图由以下哪三部分组成：<br></label>
+        <input type="checkbox" id="q-3.2.1" name="Question III.2" value="A" checked>
+        <label for="q-3.2.1">(A) 名称(Name)<br></label>
+        <input type="checkbox" id="q-3.2.2" name="Question III.2" value="B" checked>
+        <label for="q-3.2.2">(B) 属性(Attribute)<br></label>
+        <input type="checkbox" id="q-3.2.3" name="Question III.2" value="C" checked>
+        <label for="q-3.2.3">(C) 操作(Operation)<br></label>
+        <input type="checkbox" id="q-3.2.4" name="Question III.2" value="D">
+        <label for="q-3.2.4">(D) 方法(Function)<br></label>
+      </li>
+    </ol>
+  </section>
+  <section>
+    <h2>四、判断题（每题10分，共20分）</h2>
+    <ol>
+      <li>
+        <label>用例图只是用于和客户交流和沟通的,用于确定需求。</label>
+        <input type="radio" id="q-4.1.1" name="Question IV.1" value="T">
+        <label for="q-4.1.1">√</label>
+        <input type="radio" id="q-4.1.2" name="Question IV.1" value="F" checked>
+        <label for="q-4.1.2">×<br></label>
+      </li>
+      <li>
+        <label>在状态图中,终止状态在一个状态图中允许有任意多个。</label>
+        <input type="radio" id="q-4.2.1" name="Question IV.2" value="T" checked>
+        <label for="q-4.2.1">√</label>
+        <input type="radio" id="q-4.2.2" name="Question IV.2" value="F">
+        <label for="q-4.2.2">×<br></label>
+      </li>
+    </ol>
+  </section>
+  <section>
+    <h2>五、简答题（每题20分，共20分）</h2>
+    <ol>
+      <li>
+        <label for="q-5.1">简述什么是模型以及模型的表现形式？<br></label>
+        <textarea id="q-5.1" name="Question V.1" cols="80" rows="10">模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体；可以是某种图形；或者是一种数学表达式。
+        </textarea>
+      </li>
+    </ol>
+  </section>
+  <input type="submit" value="计算分数">
+</form>
+<audio src="./Franzl%20Lang%20-%20Auf%20Und%20Auf%20Voll%20Lebenslust.mp3" muted autoplay loop controls></audio>
+</body>
+</html>

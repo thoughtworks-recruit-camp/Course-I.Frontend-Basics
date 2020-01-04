@@ -1,0 +1,179 @@
+body {
+  width: 1080px;
+  height: 1920px;
+  background: #ffffff;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+#back-button {
+  font-size: 1em;
+  align-self: center;
+  flex: 0 0 200px;
+}
+
+#section-name {
+  align-self: center;
+  flex: 1 1 100px;
+}
+
+#cart-button {
+  font-size: 1em;
+  align-self: center;
+  flex: 0 0 100px;
+}
+
+#nav-bar {
+  background: #363b4b;
+  height: 150px;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  font-size: 3em;
+  color: #fefdfb;
+}
+
+#banner {
+  width: 100%;
+  height: 500px;
+  background: url("./BetterTomorrow.jpg") center/100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#dots {
+  margin: 24px;
+  align-self: flex-end;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+#dots p {
+  width: 16px;
+  height: 16px;
+  border-radius: 32px;
+  margin: auto;
+}
+
+.hollow-dot {
+  background-color: #374141;
+}
+
+.solid-dot {
+  background-color: #c2cac7;
+}
+
+.tags {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px #eeeeee solid;
+}
+
+.tags-row {
+  width: 100%;
+  vertical-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.tags-row p {
+  height: 50px;
+  padding: 20px;
+  flex: 1 1 1px;
+  border: 1px #eeeeee solid;
+  border-radius: 50px;
+  margin: 15px 30px;
+  transition: all 250ms;
+}
+
+.tags-row p:hover {
+  background: #f93550;
+  color: #ffffff;
+}
+
+.items {
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.item {
+  width: 100%;
+  height: 270px;
+  padding-left: 0;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.item:not(:last-child) {
+  border-bottom: #eeeeee 1px solid;
+}
+
+.item-cover {
+  flex: 0 0 480px;
+}
+
+.item-preview {
+  font-size: 2em;
+  margin-left: 40px;
+  flex: 1 1 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-title {
+  flex: 0 0 2em;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+
+.item-content {
+  flex: 1 1 1px;
+  margin: 0;
+  color: #bbb;
+}
+
+.item-footer {
+  flex: 0 0 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.item-price {
+  text-align: left;
+  font-weight: bold;
+  flex: 1 1 20em;
+  color: #bf5966;
+}
+
+.item-date {
+  align-self: end;
+  flex: 1 1 20em;
+  color: #bbb;
+}
+
+#cover1 {
+  background: url("./items/DanceWithTheWind.jpg") center/100%;
+}
+
+#cover2 {
+  background: url("./items/CanonINGreen.jpg") center/100%;
+}
+
+#cover3 {
+  background: url("./items/OurBluePlanet.jpg") center/100%;
+}
+
+#cover4 {
+  background: url("./items/PathLessTraveled.jpg") center/100%;
+}
+
+#cover5 {
+  background: url("./items/Revive.jpg") center/100%;
+}
