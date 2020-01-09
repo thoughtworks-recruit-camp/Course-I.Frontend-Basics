@@ -14,5 +14,8 @@
 * [III.3 Shopping Cart](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.3-cart/III.3.html)
 * [III.4 AJAX Bundle](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.4-ajax/III.4.html)
 * [III.5 Todo List](https://thoughtworks-recruit-camp.github.io/Course-I.Frontend-Basics/Section-III/III.5-todo/III.5.html)
+### Final Project
+* [**Project Manager**](https://github.com/meizhu812/project-manager)
+  * [-->> Preview (Original Version)](http://ali-ecs.truman.pro:28080/)
 ### Shares
 * [Multi-line Ellipses](https://github.com/thoughtworks-recruit-camp/Course-I.Frontend-Basics/tree/master/Share/multi-line-ellipsis-share)
